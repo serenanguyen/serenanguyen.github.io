@@ -34,10 +34,12 @@ ul {
 h1 {
   font-size: 48px;
   margin-bottom: 0px;
+  z-index: 3;
 }
 
 h2 {
   margin-bottom: 0px;
+  z-index: 3;
 }
 
 .header {
@@ -55,12 +57,13 @@ h2 {
 
 .row {
   display: flex;
-  padding: 0 60px;
+  padding: 0 60px 40px 0;
   position: relative;
 }
 
 .bio-description {
   display: flex;
+  z-index: 3;
 }
 
 .about {
@@ -256,10 +259,16 @@ h2 {
   position: fixed;
   background-color: #fff;
   padding-top: 10px;
+  text-align: center;
 }
 
 .nav-bar a {
   padding: 0 10px;
+}
+
+#home-button {
+  position: fixed;
+  left: 20px;
 }
 
 .blob {
@@ -319,6 +328,9 @@ h2 {
   .photos {
     flex-direction: column;
   }
+  .bio-description {
+    flex-direction: column;
+  }
   .photos .image {
     height: 200px;
     width: 200px;
@@ -326,14 +338,18 @@ h2 {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1200px) {
   .row {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0;
   }
   .column-reverse {
     flex-direction: column-reverse;
   }
+}
+
+@media (max-width: 800px) {
   #jrNBA,
   #greenbelt-now {
     width: 300px;
