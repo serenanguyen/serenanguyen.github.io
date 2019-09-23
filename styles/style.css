@@ -1,0 +1,346 @@
+:root {
+  --main-bg-color: #f9f7f5;
+  --accent-pink: #E3ACB6;
+  --accent-blue: #90BDD6;
+  --accent-orange: #a0542e;
+  --primary-blue: #033755;
+  --accent-purple: #b4a7d6;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  background-color: var(--main-bg-color);
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--primary-blue);
+}
+
+p {
+  z-index: 2;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+.header {
+  font-size: 24px;
+}
+
+#app {
+  background-color: var(--main-bg-color);
+  color: var(--primary-blue);
+  font-family: 'Montserrat';
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  padding: 0 60px;
+  position: relative;
+}
+
+.bio-description {
+  display: flex;
+}
+
+.about {
+  width: 500px;
+}
+
+.skills {
+  width: 200px;
+}
+
+.favorites {
+  width: 400px;
+}
+
+.description {
+  width: 600px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.headline-separator {
+  margin: 5px 0;
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: var(--accent-purple);
+  /*background-image: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));*/
+}
+
+.image {
+  height: 300px;
+  width: 400px;
+  margin: 0 20px;
+  z-index: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.photos .image {
+  height: 300px;
+  width: 300px;
+  opacity: .8;
+}
+
+#landing-img {
+  border-radius: 50%;
+  background-size: cover;
+  height: 400px;
+  background-image: url('/assets/landing.png');
+}
+
+#bio-1 {
+  background-image: url('/assets/bio-1.jpg');
+}
+
+#bio-2 {
+  background-image: url('/assets/bio-2.jpg');
+}
+
+#bio-3 {
+  background-image: url('/assets/bio-3.jpg');
+}
+
+#bio-4 {
+  background-image: url('/assets/bio-4.jpg');
+}
+
+#jrNBA {
+  height: 450px;
+  width: 500px;
+  background-image: url('/assets/jrnba-mockup.png');
+}
+
+#greenbelt-now {
+  width: 600px;
+  height: 350px;
+  background-image: url('/assets/greenbeltnow-mockup.png')
+}
+
+#aboutImg {
+  height: 500px;
+  width: 400px;
+  background-image: url('/assets/headshot.png');
+}
+
+#southwire {
+  height: 300px;
+  width: 750px;
+  background-image: url('/assets/southwire-mockup.png');
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+#landing {}
+
+#projects {
+  height: 100%;
+}
+
+.background {
+  height: 400px;
+  width: 400px;
+  background-color: var(--accent-pink);
+  position: absolute;
+  right: 770px;
+  bottom: 80px;
+  opacity: .5;
+  border-radius: 20px;
+}
+
+#bio {
+  position: relative;
+}
+
+.chip {
+  height: 400px;
+  width: 400px;
+  border-radius: 8px 14px 24px 14px;
+  transform: skew(20deg, 20deg);
+  background-color: #CEE8D1;
+  position: absolute;
+  opacity: .5;
+  top: -200px;
+  left: 80px;
+}
+
+.rectangle {
+  height: 200px;
+  width: 500px;
+  border-radius: 8px 14px 24px 14px;
+  background-color: #F494C1;
+  position: absolute;
+  transform: skew(20deg, 0) rotate(20deg);
+  opacity: .5;
+  top: 300px;
+  right: 0;
+}
+
+#bio .triangle {
+  left: 20px;
+  transform: rotate(310deg);
+}
+
+.description {
+  padding: 20px;
+  width: 400px;
+  position: relative;
+}
+
+.row .blob {
+  right: 0;
+  top: -120px;
+}
+
+.row .square {
+  top: 0;
+}
+
+.row .trap {
+  top: -80px;
+  left: -280px;
+}
+
+.bg {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  background-color: white;
+}
+
+.about {
+  z-index: 20;
+}
+
+.photos {
+  display: flex;
+}
+
+.nav-bar {
+  height: 30px;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  background-color: #fff;
+  padding-top: 10px;
+}
+
+.nav-bar a {
+  padding: 0 10px;
+}
+
+.blob {
+  width: 250px;
+  height: 240px;
+  border-radius: 38px 64px 44px 84px;
+  background-color: #BB3F1C;
+  position: absolute;
+  transform: skew(0, 10deg);
+  opacity: .5;
+  top: 40px;
+}
+
+.trap {
+  width: 200px;
+  height: 0;
+  border-radius: 44px;
+  border-bottom: 250px solid #ECABA5;
+  border-left: 250px solid transparent;
+  border-right: 150px solid transparent;
+  position: absolute;
+  top: 116px;
+  transform: rotate(-10deg);
+  opacity: .5;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-radius: 64px;
+  border-bottom: 400px solid var(--accent-blue);
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  transform: skew(0, 20deg) rotate(225deg);
+  position: absolute;
+  opacity: .5;
+  top: 500px;
+  right: 160px;
+}
+
+.square {
+  height: 340px;
+  width: 340px;
+  background-color: #EABE43;
+  border-radius: 26px;
+  transform: skew(0, 10deg) rotate(240deg);
+  position: absolute;
+  opacity: .5;
+  right: 20px;
+  top: 600px;
+}
+
+@media (max-width: 1420px) {
+  #bio {
+    flex-direction: row;
+  }
+  .photos {
+    flex-direction: column;
+  }
+  .photos .image {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+  #jrNBA,
+  #greenbelt-now {
+    width: 300px;
+    height: 200px;
+  }
+  #southwire {
+    height: 200px;
+    width: 450px;
+  }
+}
