@@ -12,19 +12,20 @@
   <div id="app">
     <div class='top-bar'></div>
     <div class="nav-bar">
-      <button id="home-button">Home</button> 
-      <a class="bio-button" href="#">Bio</a> 
-      <span>//</span>
+      <!--<button id="home-button">Home</button>-->
+      <div id="home-button"></div>
+      <a class="bio-button" href="#">Bio</a>
+      
       <a class="projects-button" href="#">Projects</a>
-      <span>//</span>
+      
       <a class="resume-button" href="/assets/Serena-Nguyen-resume.pdf" target="_blank">Resume</a>
-      <span>//</span>
+      
       <a href="mailto:snguyenatx@gmail.com" rel="noopener noreferrer">Email</a>
-      <span>//</span>
+      
       <a class="linkedin-button" href="https://www.linkedin.com/in/serenanguyenatx/" target="_blank">LinkedIn</a>
-      <span>//</span>
+      
       <a class="github-button" href="https://github.com/serenanguyen" target="_blank">Github</a>
-      <span>//</span>
+      
       <a class="codepen-button" href="https://codepen.io/serenanguyen" target="_blank">CodePen</a>
     </div>
     <div class="blob"></div>
@@ -32,8 +33,9 @@
     <div class="triangle"></div>
     <div class="square"></div>
     <div id="landing" class="section">
-      <div class="image" id="landing-img"></div>
-      <div>
+      <div id="landing-img"></div>
+      <div id="landing-text">
+        <div id="icon"></div>
         <h1>Serena Nguyen</h1>
         <div class='headline-separator'></div>
         <h2>Front End Development & Wildlife Rehabilitation</h2>
@@ -54,9 +56,12 @@
         <div class="about">
           <h2>ABOUT</h2>
           <div class='headline-separator'></div>
-          <p>I am a front end developer in boiling Austin, Texas. When I'm not collaborating to build optimal applications I'm
-            rehabilitating local wildlife, climbing, working on DIY projects, lifting, and volunteering at workshops that provide computer
-            science education to young students. My love for coding stemmed from my desire to build and express my creativity.</p>
+          <p>
+            I am a front end developer in Austin, Texas. I collaborate with developers, UI/UX designers, QA engineers, and project managers to build optimal applications. I love working directly with clients to determine the most effective solution. When I'm not coding, I'm
+            rehabilitating local wildlife, climbing, working on DIY projects, lifting, and volunteering at workshops that
+            provide computer science education to young students. My love for coding stemmed from my desire to build and
+            express my creativity.
+          </p>
         </div>
         <div class="skills">
           <h2>SKILLS</h2>
@@ -68,6 +73,7 @@
             <li>Firebase</li>
             <li>Jest</li>
             <li>Responsive Design</li>
+            <li>Google and Firebase Analytics</li>
           </ul>
         </div>
         <div class="favorites">
@@ -91,18 +97,20 @@
         <div class='description'>
           <a href='http://www.greenbeltnow.com/' target="_blank" rel="noopener noreferrer" class='header'>Greenbelt Now</a>
           <div class='headline-separator'></div>
-          <p>Greenbelt Now is a tool used to view the varying water levels along the Greenbelt. Users can select locations from
-            an interactive map. It is responsive React web app that displays water data from the USGS API using React Hooks
-            for state management.</p>
+          <p>
+            Greenbelt Now is responsive React web app that displays water data from the USGS API using React Hooks for state management. Users can select locations along the Greenbelt from an interactive map that I created in Adobe Illustrator. 
+          </p>
         </div>
       </div>
       <div class="row column-reverse">
         <div class='description'>
           <a href='https://mutualmobile.com/work/southwire-configurator-plus' target="_blank" rel="noopener noreferrer" class='header'>Southwire Configurator</a>
           <div class='headline-separator'></div>
-          <p>Southwire Configurator is an interactive web app using technologies such as React, Redux, and Firestore with responsive
-            design supporting desktop, tablets, and mobile devices. I implemented features that rendered downloadable PDFs
-            from XLS files uploaded by users. I also provided production support to improve product usability.</p>
+          <p>
+            Southwire Configurator is an interactive web app using technologies such as React, Redux, and Firestore with responsive
+            design supporting desktop, tablets, and mobile devices. I was the lead developer on this project working with designers, QA engineers, and project managers to clarify requirements and manage dependencies. I implemented features that rendered downloadable PDFs
+            from XLS files uploaded by users. I also provided production support to improve product usability after user feedback.
+          </p>
         </div>
         <div class='image' id='southwire'></div>
         <div class='blob'></div>
@@ -114,11 +122,13 @@
 
           <a href='https://jr.nba.com/jr-nba-coach-app/' target="_blank" rel="noopener noreferrer" class='header'>Jr. NBA Coach</a>
           <div class='headline-separator'></div>
-          <p>Jr. NBA Coach is a React Native app using MobX state management. I built screens and components compatible with
-            both iOS and android platforms and maintained dependency verions.</p>
+          <p>
+            Jr. NBA Coach is a React Native app using MobX state management. I worked with designers to build screens and components that satisfied both iOS and android UI/UX standards. I also maintained dependencies to meet Google Play and App Store requirements.
+          </p>
         </div>
       </div>
     </div>
+    <footer>&copy;2019 Serena Nguyen</footer>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="scripts/main.js"></script>
