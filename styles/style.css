@@ -179,7 +179,8 @@ footer {
   flex-direction: column;
 }
 
-#landing {
+#landing i {
+  padding-right: 10px;
 }
 
 #projects {
