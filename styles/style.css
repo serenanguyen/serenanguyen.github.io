@@ -9,6 +9,7 @@
 
 body {
   margin: 0;
+  min-width: 760px;
 }
 
 html {
@@ -170,15 +171,16 @@ footer {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
+  padding-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 40px;
 }
 
-#landing {}
+#landing {
+}
 
 #projects {
   height: 100%;
@@ -263,21 +265,8 @@ footer {
   display: flex;
 }
 
-.nav-bar {
-  height: 30px;
-  width: 100%;
-  z-index: 10;
-  position: fixed;
-  background-color: #fff;
-  padding-top: 10px;
-  text-align: center;
-}
-
-.nav-bar a {
-  padding: 0 10px;
-}
-
 #home-button {
+  z-index: 4;
   cursor: pointer;
   position: fixed;
   top: 6px;
@@ -352,6 +341,12 @@ footer {
   opacity: .5;
   right: 20px;
   top: 600px;
+}
+
+@media (min-width: 1420px) {
+   .section {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 1420px) {
