@@ -1,10 +1,13 @@
 :root {
   --main-bg-color: #f9f7f5;
-  --accent-pink: #E3ACB6;
   --accent-blue: #90BDD6;
-  --accent-orange: #a0542e;
+  --link-color: #a0542e;
   --primary-blue: #033755;
   --accent-purple: #b4a7d6;
+  --accent-mint: #CEE8D1;
+  --accent-pink: #F494C1;
+  --accent-yellow: #EABE43;
+  --accent-orange: #BB3F1C;
 }
 
 body {
@@ -20,7 +23,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--primary-blue);
+  color: var(--link-color);
 }
 
 p {
@@ -92,6 +95,10 @@ footer {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.description .fas {
+  color: var(--primary-blue)
 }
 
 .headline-separator {
@@ -172,7 +179,7 @@ footer {
 
 .section {
   height: 100%;
-  padding-top: 60px;
+  padding: 60px 0 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,17 +194,6 @@ footer {
   height: 100%;
 }
 
-.background {
-  height: 400px;
-  width: 400px;
-  background-color: var(--accent-pink);
-  position: absolute;
-  right: 770px;
-  bottom: 80px;
-  opacity: .5;
-  border-radius: 20px;
-}
-
 #bio {
   position: relative;
 }
@@ -207,7 +203,7 @@ footer {
   width: 400px;
   border-radius: 8px 14px 24px 14px;
   transform: skew(20deg, 20deg);
-  background-color: #CEE8D1;
+  background-color: var(--accent-mint);
   position: absolute;
   opacity: .5;
   top: -200px;
@@ -218,7 +214,7 @@ footer {
   height: 200px;
   width: 500px;
   border-radius: 8px 14px 24px 14px;
-  background-color: #F494C1;
+  background-color: var(--accent-pink);
   position: absolute;
   transform: skew(20deg, 0) rotate(20deg);
   opacity: .5;
@@ -285,7 +281,6 @@ footer {
   z-index: 4;
   height: 300px;
   width: 300px;
-  background-color: 'red';
   background-image: url('/assets/possum-icon.svg');
 }
 
@@ -298,7 +293,7 @@ footer {
   width: 250px;
   height: 240px;
   border-radius: 38px 64px 44px 84px;
-  background-color: #BB3F1C;
+  background-color: var(--accent-orange);
   position: absolute;
   transform: skew(0, 10deg);
   opacity: .5;
@@ -309,7 +304,7 @@ footer {
   width: 200px;
   height: 0;
   border-radius: 44px;
-  border-bottom: 250px solid #ECABA5;
+  border-bottom: 250px solid var(--accent-pink);
   border-left: 250px solid transparent;
   border-right: 150px solid transparent;
   position: absolute;
@@ -335,7 +330,7 @@ footer {
 .square {
   height: 340px;
   width: 340px;
-  background-color: #EABE43;
+  background-color: var(--accent-yellow);
   border-radius: 26px;
   transform: skew(0, 10deg) rotate(240deg);
   position: absolute;
@@ -371,7 +366,6 @@ footer {
   .row {
     flex-direction: column;
     align-items: center;
-    padding: 0 60px;
   }
   .column-reverse {
     flex-direction: column-reverse;
